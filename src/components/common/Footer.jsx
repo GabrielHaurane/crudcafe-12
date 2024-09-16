@@ -1,10 +1,11 @@
 import React from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
+import '../../App.css';
 const Footer = () => {
     return (
-        <div className='backC text-center py-3 text-white'>
-            <footer>&copy; Todos los derechos reservados</footer>
-        </div>
+        <footer className='backC text-center py-3 text-white'>
+            <div>&copy; Todos los derechos reservados</div>
+        </footer>
     );
 };
 
