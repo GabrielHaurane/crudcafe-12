@@ -47,10 +47,9 @@ const Administrador = () => {
           </tr>
         </thead>
         <tbody>
-          <ItemProducto></ItemProducto>
-          <ItemProducto></ItemProducto>
-          <ItemProducto></ItemProducto>
-          <ItemProducto></ItemProducto>
+          {
+            listaProductos.map((producto, posicion)=> <ItemProducto key={producto.id} producto={producto} fila={posicion + 1}></ItemProducto>)
+          }
         </tbody>
       </Table>
     </section>
