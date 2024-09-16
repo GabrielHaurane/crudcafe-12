@@ -62,6 +62,87 @@
       "descripcion_breve": "dasdasdasdasdasxcxczxczxc",
       "descripcion_amplia": "czxczxcxzcxzczxcxcc",
       "id": "2yyeuDX"
+    },
+    {
+      "nombreProducto": "medialuna",
+      "precio": "3000",
+      "imagen": "https://images.pexels.com/photos/887853/pexels-photo-887853.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+      "categoria": "Dulce",
+      "descripcion_breve": "medialuna con dulce de leche",
+      "descripcion_amplia": "asdasasfasfafaffafaaf",
+      "id": "Ll2jsWW"
+    },
+    {
+      "nombreProducto": "cafe",
+      "precio": "2525",
+      "imagen": "https://images.pexels.com/photos/887853/pexels-photo-887853.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+      "categoria": "Dulce",
+      "descripcion_breve": "dasdadsssssssssssssss",
+      "descripcion_amplia": "sssssssssssssssssssssssssssssss",
+      "id": "fTTSYME"
+    },
+    {
+      "nombreProducto": "cafe",
+      "precio": "2332",
+      "imagen": "https://images.pexels.com/photos/887853/pexels-photo-887853.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+      "categoria": "Infusiones",
+      "descripcion_breve": "dasdasdasd",
+      "descripcion_amplia": "dasdasdasdasdadas",
+      "id": "Rl5dx9z"
+    },
+    {
+      "nombreProducto": "cafe",
+      "precio": "2323",
+      "imagen": "https://images.pexels.com/photos/887853/pexels-photo-887853.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+      "categoria": "Batidos",
+      "descripcion_breve": "dasdssssssssssssss",
+      "descripcion_amplia": "ssssssssssssssssssssssssss",
+      "id": "TSOPSvr"
+    },
+    {
+      "nombreProducto": "cafe",
+      "precio": "2323",
+      "imagen": "https://images.pexels.com/photos/887853/pexels-photo-887853.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+      "categoria": "Batidos",
+      "descripcion_breve": "dasdssssssssssssss",
+      "descripcion_amplia": "ssssssssssssssssssssssssss",
+      "id": "MLY55lS"
+    },
+    {
+      "nombreProducto": "cafe",
+      "precio": "2323",
+      "imagen": "https://images.pexels.com/photos/887853/pexels-photo-887853.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+      "categoria": "Batidos",
+      "descripcion_breve": "sadsdaaaaaaaaaaaaaaaaaaaa",
+      "descripcion_amplia": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+      "id": "btlKks9"
+    },
+    {
+      "nombreProducto": "cafe 2",
+      "precio": "2222",
+      "imagen": "https://images.pexels.com/photos/887853/pexels-photo-887853.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+      "categoria": "Salado",
+      "descripcion_breve": "wsdssssssssssssssssss",
+      "descripcion_amplia": "ssssssssssssssssssssssssss",
+      "id": "XoU7J1l"
+    },
+    {
+      "nombreProducto": "cafe 23",
+      "precio": "2444",
+      "imagen": "https://images.pexels.com/photos/887853/pexels-photo-887853.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+      "categoria": "Batidos",
+      "descripcion_breve": "dsasdsadddddddddddddd",
+      "descripcion_amplia": "dddddddddddddddddddddddddd",
+      "id": "c5ypGSW"
+    },
+    {
+      "nombreProducto": "cafe 23",
+      "precio": "4444",
+      "imagen": "https://images.pexels.com/photos/887853/pexels-photo-887853.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+      "categoria": "Batidos",
+      "descripcion_breve": "ddddddddddd",
+      "descripcion_amplia": "ddddddddddddddddddd",
+      "id": "ERZdcH5"
     }
   ]
 }

@@ -1,22 +1,25 @@
-const URLProducto = import.meta.env.VITE_API_PRODUCTO
-// peticiones o solicitudes
+const URLProducto = import.meta.env.VITE_API_PRODUCTO;
 
-// GET
-// PUT O PATH
-// DELETE
+//Peticiones o solicitudes
 
-// POST
+//GET
+//PUT o PATH
+//DELETE
+
+//POST
 export const crearProductoAPI = async(productoNuevo)=>{
-try {
+   try {
     const respuesta = await fetch(URLProducto,{
-        method:"POST",
+        method: "POST",
         headers:{
             "Content-Type":"application/json"
         },
         body: JSON.stringify(productoNuevo)
     })
-
-} catch (error) {
+    console.log(respuesta);
+    return respuesta;
+   } catch (error) {
     console.error(error)
-}
+    return false;
+   }
 }
