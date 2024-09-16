@@ -4,11 +4,11 @@ import Administrador from "./components/pages/Administrador";
 import Inicio from "./components/pages/Inicio";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import "bootstrap/dist/css/bootstrap.min.css";
-import "./App.css";
 import "bootstrap-icons/font/bootstrap-icons.css";
 import FormularioProducto from "./components/pages/producto/FormularioProducto";
-import Error404 from "./components/pages/Erro404";
-import DetalleProducto from "./components/pages/DetalleProducto";
+// import DetalleProducto from "./components/pages/DetalleProducto";
+import Error404 from "./components/pages/Error404";
+import "./App.css";
 
 function App() {
   return (

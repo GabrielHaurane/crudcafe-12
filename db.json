@@ -1,0 +1,13 @@
+{
+    "productos":[
+        {
+            "id":"12",
+            "nombreProducto": "Brownie con almendras",
+            "precio": 800,
+            "imagen": "https://images.pexels.com/photos/887853/pexels-photo-887853.jpeg",
+            "categoria": "Dulce",
+            "descripcion_breve":"alguna descripcion",
+            "descripcion_amplia":"alguna descripcion amplia"
+        }
+    ]
+}
