@@ -11,15 +11,6 @@
     },
     {
       "nombreProducto": "cafe",
-      "precio": "50",
-      "imagen": "https://images.pexels.com/photos/887853/pexels-photo-887853.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
-      "categoria": "Batidos",
-      "descripcion_breve": "dasdasdasdad",
-      "descripcion_amplia": "dasdasdasdasdasdasd",
-      "id": "zIzrXtM"
-    },
-    {
-      "nombreProducto": "cafe",
       "precio": "2333",
       "imagen": "https://images.pexels.com/photos/887853/pexels-photo-887853.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
       "categoria": "Infusiones",
@@ -125,24 +116,6 @@
       "descripcion_breve": "wsdssssssssssssssssss",
       "descripcion_amplia": "ssssssssssssssssssssssssss",
       "id": "XoU7J1l"
-    },
-    {
-      "nombreProducto": "cafe 23",
-      "precio": "2444",
-      "imagen": "https://images.pexels.com/photos/887853/pexels-photo-887853.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
-      "categoria": "Batidos",
-      "descripcion_breve": "dsasdsadddddddddddddd",
-      "descripcion_amplia": "dddddddddddddddddddddddddd",
-      "id": "c5ypGSW"
-    },
-    {
-      "nombreProducto": "cafe 23",
-      "precio": "4444",
-      "imagen": "https://images.pexels.com/photos/887853/pexels-photo-887853.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
-      "categoria": "Batidos",
-      "descripcion_breve": "ddddddddddd",
-      "descripcion_amplia": "ddddddddddddddddddd",
-      "id": "ERZdcH5"
     },
     {
       "nombreProducto": "capuccino",
