@@ -19,6 +19,7 @@ const FormularioProducto = () => {
       console.log('se creo el producto')
       reset();
     }else{
+      console.log("no se creo el producto")
       //mostrar un cartel de error al usuario
     }
   };

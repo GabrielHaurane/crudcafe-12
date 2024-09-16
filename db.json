@@ -1,13 +1,67 @@
 {
-    "productos":[
-        {
-            "id":"12",
-            "nombreProducto": "Brownie con almendras",
-            "precio": 800,
-            "imagen": "https://images.pexels.com/photos/887853/pexels-photo-887853.jpeg",
-            "categoria": "Dulce",
-            "descripcion_breve":"alguna descripcion",
-            "descripcion_amplia":"alguna descripcion amplia"
-        }
-    ]
+  "productos": [
+    {
+      "id": "12",
+      "nombreProducto": "Brownie con almendras",
+      "precio": 800,
+      "imagen": "https://images.pexels.com/photos/887853/pexels-photo-887853.jpeg",
+      "categoria": "Dulce",
+      "descripcion_breve": "alguna descripcion",
+      "descripcion_amplia": "alguna descripcion amplia"
+    },
+    {
+      "nombreProducto": "cafe",
+      "precio": "50",
+      "imagen": "https://images.pexels.com/photos/887853/pexels-photo-887853.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+      "categoria": "Batidos",
+      "descripcion_breve": "dasdasdasdad",
+      "descripcion_amplia": "dasdasdasdasdasdasd",
+      "id": "zIzrXtM"
+    },
+    {
+      "nombreProducto": "cafe",
+      "precio": "2333",
+      "imagen": "https://images.pexels.com/photos/887853/pexels-photo-887853.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+      "categoria": "Infusiones",
+      "descripcion_breve": "deqwdqddw",
+      "descripcion_amplia": "dadasdasdsdasdasdasd",
+      "id": "dTzC-yX"
+    },
+    {
+      "nombreProducto": "cafe",
+      "precio": "2333",
+      "imagen": "https://images.pexels.com/photos/887853/pexels-photo-887853.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+      "categoria": "Infusiones",
+      "descripcion_breve": "deqwdqddw",
+      "descripcion_amplia": "dadasdasdsdasdasdasd",
+      "id": "mkLsqGw"
+    },
+    {
+      "nombreProducto": "cafe",
+      "precio": "2333",
+      "imagen": "https://images.pexels.com/photos/887853/pexels-photo-887853.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+      "categoria": "Batidos",
+      "descripcion_breve": "dasdasdasdasdasd",
+      "descripcion_amplia": "dasdasdsadsadasd",
+      "id": "H9DpxG-"
+    },
+    {
+      "nombreProducto": "cafe",
+      "precio": "116",
+      "imagen": "https://images.pexels.com/photos/887853/pexels-photo-887853.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+      "categoria": "Batidos",
+      "descripcion_breve": "iyyikbkhbkhib",
+      "descripcion_amplia": "mibubkhbkkugvgb",
+      "id": "c-WaBec"
+    },
+    {
+      "nombreProducto": "cafe",
+      "precio": "3231",
+      "imagen": "https://images.pexels.com/photos/887853/pexels-photo-887853.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+      "categoria": "Batidos",
+      "descripcion_breve": "dasdasdasdasdasxcxczxczxc",
+      "descripcion_amplia": "czxczxcxzcxzczxcxcc",
+      "id": "2yyeuDX"
+    }
+  ]
 }
