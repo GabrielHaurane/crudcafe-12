@@ -3,7 +3,7 @@ import { useForm } from "react-hook-form";
 import { crearProductoAPI } from "../../../helpers/queries";
 import Swal from "sweetalert2";
 
-const FormularioProducto = () => {
+const FormularioProducto = ({titulo, creandoProducto}) => {
   const {
     register,
     handleSubmit,
@@ -12,35 +12,39 @@ const FormularioProducto = () => {
   } = useForm();
 
   const onSubmit = async(producto) => {
-    console.log(producto);
-    //pedir a la api crear el producto
-    const respuesta = await crearProductoAPI(producto);
-    if(respuesta.status === 201){
-      //mostrar un cartel afirmativo al usuario
-      console.log('se creo el producto')
-      Swal.fire({
-        position: "top-end",
-        icon: "success",
-        title: `se creo correctamente el producto ${producto.nombreProducto}`,
-        showConfirmButton: false,
-        timer: 1500
-        
-      });
-      reset();
-    }else{
-      //mostrar un cartel de error al usuario
-      Swal.fire({
-        icon: "error",
-        title: "Oops...",
-        text: `no se pudo crear el producto ${producto.nombreProducto}, intente mas tarde`,
-        
-      });
+    if (creandoProducto) {
+      console.log(producto);
+      //pedir a la api crear el producto
+      const respuesta = await crearProductoAPI(producto);
+      if(respuesta.status === 201){
+        //mostrar un cartel afirmativo al usuario
+        console.log('se creo el producto')
+        Swal.fire({
+          position: "top-end",
+          icon: "success",
+          title: `se creo correctamente el producto ${producto.nombreProducto}`,
+          showConfirmButton: false,
+          timer: 1500
+          
+        });
+        reset();
+      }else{
+        //mostrar un cartel de error al usuario
+        Swal.fire({
+          icon: "error",
+          title: "Oops...",
+          text: `no se pudo crear el producto ${producto.nombreProducto}, intente mas tarde`,
+          
+        });
+      }
+    }else {
+      // mostrar un car
     }
   };
 
   return (
     <section className="container mainSection">
-      <h1 className="display-4 mt-5">Nuevo producto</h1>
+      <h1 className="display-4 mt-5">{titulo}</h1>
       <hr />
       <Form className="my-4" onSubmit={handleSubmit(onSubmit)}>
         <Form.Group className="mb-3" controlId="formNombreProdcuto">

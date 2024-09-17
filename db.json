@@ -62,6 +62,24 @@
       "descripcion_breve": "capuccino",
       "descripcion_amplia": "capuccino grande",
       "id": "fRH48P9"
+    },
+    {
+      "nombreProducto": "creep serrano",
+      "precio": "5000",
+      "imagen": "https://images.pexels.com/photos/17653584/pexels-photo-17653584/free-photo-of-plato-comida-bol-tazon.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+      "categoria": "Salado",
+      "descripcion_breve": "creep serrano",
+      "descripcion_amplia": "creep serrano con jamon y queso",
+      "id": "vfgWtUM"
+    },
+    {
+      "nombreProducto": "cafe caliente",
+      "precio": "3000",
+      "imagen": "https://images.pexels.com/photos/887853/pexels-photo-887853.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+      "categoria": "Infusiones",
+      "descripcion_breve": "una taza de cafe",
+      "descripcion_amplia": "una taza de cafe caliente",
+      "id": "97ROn1X"
     }
   ]
 }
