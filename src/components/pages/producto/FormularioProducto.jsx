@@ -1,9 +1,9 @@
 import { Form, Button } from "react-bootstrap";
 import { useForm } from "react-hook-form";
-import { buscarProductoAPI, crearProductoAPI } from "../../../helpers/queries";
+import { buscarProductoAPI, crearProductoAPI, editarProductoAPI } from "../../../helpers/queries";
 import Swal from "sweetalert2";
 import { useEffect } from "react";
-import { useParams } from "react-router-dom";
+import { useNavigate, useParams } from "react-router-dom";
 
 const FormularioProducto = ({titulo, creandoProducto}) => {
   const {
@@ -11,10 +11,10 @@ const FormularioProducto = ({titulo, creandoProducto}) => {
     handleSubmit,
     formState: { errors },
     reset,
-    setValue
+    setValue,
   } = useForm();
   const {id} = useParams();
-  console.log(id)
+  const navegacion = useNavigate();
 
   useEffect(()=>{
     if (!creandoProducto) {
@@ -36,6 +36,12 @@ const FormularioProducto = ({titulo, creandoProducto}) => {
       setValue('descripcion_amplia', productoEncontrado.descripcion_amplia)
     }else {
       // cartel del error
+      Swal.fire({
+        icon: "error",
+        title: "Oops...",
+        text: `no se pudo obtener el producto, intente mas tarde`,
+        
+      });
     }
   }
   const onSubmit = async(producto) => {
@@ -65,7 +71,31 @@ const FormularioProducto = ({titulo, creandoProducto}) => {
         });
       }
     }else {
-      // mostrar un car
+      // aqui edito 
+
+      // enviar el producto a la API 
+      // mostramos el mensaje de que todo sale bien
+      // redireccionar al admin
+      const respuesta = await editarProductoAPI(producto, id)
+      console.log(respuesta)
+      if (respuesta.status === 200) {
+        Swal.fire({
+          position: "top-end",
+          icon: "success",
+          title: `se edito correctamente el producto ${producto.nombreProducto} correctamente`,
+          showConfirmButton: false,
+          timer: 1500
+        });
+        // redireccion al admin
+        navegacion('/administrador')
+      } else {
+        Swal.fire({
+          position: "top-end",
+          icon: "error",
+          title: ` el producto ${producto.nombreProducto}, no fue editado correctamente, intente en unos minutos`,
+
+        });
+      }
     }
   };
 

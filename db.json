@@ -2,7 +2,7 @@
   "productos": [
     {
       "nombreProducto": "cafe",
-      "precio": "2525",
+      "precio": "3000",
       "imagen": "https://images.pexels.com/photos/887853/pexels-photo-887853.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
       "categoria": "Dulce",
       "descripcion_breve": "dasdadsssssssssssssss",
@@ -11,21 +11,12 @@
     },
     {
       "nombreProducto": "cafe",
-      "precio": "2332",
+      "precio": "5000",
       "imagen": "https://images.pexels.com/photos/887853/pexels-photo-887853.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
       "categoria": "Infusiones",
-      "descripcion_breve": "dasdasdasd",
+      "descripcion_breve": "dasdasdasd sis",
       "descripcion_amplia": "dasdasdasdasdadas",
       "id": "Rl5dx9z"
-    },
-    {
-      "nombreProducto": "cafe",
-      "precio": "2323",
-      "imagen": "https://images.pexels.com/photos/887853/pexels-photo-887853.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
-      "categoria": "Batidos",
-      "descripcion_breve": "dasdssssssssssssss",
-      "descripcion_amplia": "ssssssssssssssssssssssssss",
-      "id": "TSOPSvr"
     },
     {
       "nombreProducto": "cafe",
