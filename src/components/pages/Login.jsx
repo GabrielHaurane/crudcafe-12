@@ -1,6 +1,8 @@
 import React from "react";
 import { useForm } from "react-hook-form";
 import { Button, Card, Container, Form, Row } from "react-bootstrap";
+import { login } from "../../helpers/queries";
+import Swal from "sweetalert2";
 
 const Login = () => {
   const {
@@ -9,6 +11,21 @@ const Login = () => {
     formState: { errors },
     reset,
   } = useForm();
+  const onSubmit = (usuario)=>{
+    if(login(usuario)){
+      Swal.fire({
+        title: 'usuario logueado',
+        text: `se creo correctamente el producto ${producto.nombreProducto}`,
+        icon: "success",
+      });
+      setUsuarioLogueado(usuario.email)
+    }else{
+      Swal.fire({
+        icon: "error",
+        title: "Error de logueo el mail o la password es incorrecto",
+      });
+    }
+  }
   return (
     <section className="mainSection align-content-center">
       <Container className="">
@@ -18,7 +35,7 @@ const Login = () => {
               <div className="justify-content-center d-flex">
                 <Card.Title>Login</Card.Title>
               </div>
-              <Form>
+              <Form onSubmit={handleSubmit(onSubmit)}>
                 <Form.Group className="mb-3" controlId="formGroupEmail">
                   <Form.Label>Email</Form.Label>
                   <Form.Control type="email" placeholder="Ejemplo@gmail.com" 
@@ -39,7 +56,7 @@ const Login = () => {
                 <Form.Group className="mb-4" controlId="formGroupPassword">
                   <Form.Label>Contraseña</Form.Label>
                   <Form.Control type="password" placeholder="Ejemplo123" 
-                  {...register("contrasenia", {
+                  {...register("password", {
                     required: "La contraseña es un campo obligatorio",
                     minLength:{
                         value: 8,
@@ -51,7 +68,7 @@ const Login = () => {
                     }
                   })}
                   />
-                  <Form.Text className="text-danger">{errors.contrasenia?.message}</Form.Text>
+                  <Form.Text className="text-danger">{errors.password?.message}</Form.Text>
                 </Form.Group>
                 <div className="justify-content-center d-flex">
                   <Button type="submir" variant="success">Enviar</Button>

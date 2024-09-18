@@ -67,3 +67,18 @@ export const borrarProductoAPI = async(id)=>{
      return false;
     }
  }
+
+// LOGIN
+const userAdmin ={
+    email: "admin@admin.com",
+    password: "123456678"
+}
+
+export const login = (usuario)=>{
+    if (usuario.email === userAdmin.email && usuario.password === userAdmin.password) {
+        sessionStorage.setItem('userKey', JSON.stringify(userAdmin.email));
+        return true
+    } else {
+        return false
+    }
+}

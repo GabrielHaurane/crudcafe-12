@@ -1,8 +1,13 @@
-import { Navbar, Container, Nav } from "react-bootstrap";
+import { Navbar, Container, Nav, Button } from "react-bootstrap";
 import logo from "../../assets/Coffee_Logo.png";
 import { Link, NavLink } from "react-router-dom";
 
-const Menu = () => {
+const Menu = ({usuarioLogueado, setUsuarioLogueado}) => {
+  const logout =()=>{
+    sessionStorage.removeItem('userKey')
+    setUsuarioLogueado('')
+    
+  }
   return (
     <Navbar expand="lg" className="bg-body-tertiary">
       <Container>
@@ -18,8 +23,15 @@ const Menu = () => {
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="ms-auto">
             <NavLink end className='nav-link' to='/'>Inicio</NavLink>
-            <NavLink end className='nav-link' to='/administrador'>Administrador</NavLink>
+            {
+              usuarioLogueado!==''?(
+                <>
+                <NavLink end className='nav-link' to='/administrador'>Administrador</NavLink>
+                <Button className="nav-link">logout</Button>
+                </>
+              ):
             <NavLink end className='nav-link' to='/login'>Login</NavLink>
+            }
           </Nav>
         </Navbar.Collapse>
       </Container>
