@@ -71,7 +71,7 @@ export const borrarProductoAPI = async(id)=>{
 // LOGIN
 const userAdmin ={
     email: "admin@admin.com",
-    password: "123456678"
+    password: "12345678"
 }
 
 export const login = (usuario)=>{

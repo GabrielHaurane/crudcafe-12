@@ -3,26 +3,31 @@ import { useForm } from "react-hook-form";
 import { Button, Card, Container, Form, Row } from "react-bootstrap";
 import { login } from "../../helpers/queries";
 import Swal from "sweetalert2";
+import { useNavigate } from "react-router-dom";
 
-const Login = () => {
+const Login = ({setUsuarioLogueado}) => {
   const {
     register,
     handleSubmit,
     formState: { errors },
     reset,
   } = useForm();
+  const navegacion = useNavigate();
+
   const onSubmit = (usuario)=>{
     if(login(usuario)){
       Swal.fire({
         title: 'usuario logueado',
-        text: `se creo correctamente el producto ${producto.nombreProducto}`,
+        text: `Bienvenido a crudCafe`,
         icon: "success",
       });
+      navegacion('/administrador')
       setUsuarioLogueado(usuario.email)
     }else{
       Swal.fire({
         icon: "error",
-        title: "Error de logueo el mail o la password es incorrecto",
+        title: "Email o contraseña incorrecto",
+        text: "ocurrio un error",
       });
     }
   }

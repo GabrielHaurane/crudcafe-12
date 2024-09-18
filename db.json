@@ -23,15 +23,6 @@
       "precio": "2323",
       "imagen": "https://images.pexels.com/photos/887853/pexels-photo-887853.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
       "categoria": "Batidos",
-      "descripcion_breve": "dasdssssssssssssss",
-      "descripcion_amplia": "ssssssssssssssssssssssssss",
-      "id": "MLY55lS"
-    },
-    {
-      "nombreProducto": "cafe",
-      "precio": "2323",
-      "imagen": "https://images.pexels.com/photos/887853/pexels-photo-887853.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
-      "categoria": "Batidos",
       "descripcion_breve": "sadsdaaaaaaaaaaaaaaaaaaaa",
       "descripcion_amplia": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
       "id": "btlKks9"
@@ -53,15 +44,6 @@
       "descripcion_breve": "capuccino",
       "descripcion_amplia": "capuccino grande",
       "id": "fRH48P9"
-    },
-    {
-      "nombreProducto": "creep serrano",
-      "precio": "5000",
-      "imagen": "https://images.pexels.com/photos/17653584/pexels-photo-17653584/free-photo-of-plato-comida-bol-tazon.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
-      "categoria": "Salado",
-      "descripcion_breve": "creep serrano",
-      "descripcion_amplia": "creep serrano con jamon y queso",
-      "id": "vfgWtUM"
     },
     {
       "nombreProducto": "cafe caliente",
