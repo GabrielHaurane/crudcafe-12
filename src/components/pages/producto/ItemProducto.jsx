@@ -57,7 +57,7 @@ const ItemProducto = ({ producto, fila, setListaProductos }) => {
       </td>
       <td>{producto.categoria}</td>
       <td className="text-center">
-        <Link className="btn btn-primary me-lg-2"  to="/administrador/crear" variant="warning">
+        <Link className="btn btn-primary me-lg-2"  to={`/administrador/editar/${producto.id}`} variant="warning">
           <i className="bi bi-pencil-square"></i>
         </Link>
         <Button variant="danger" onClick={borrarProducto}>
