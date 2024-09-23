@@ -1,29 +1,40 @@
-import { Container, Row } from "react-bootstrap";
+import React, { useEffect, useState } from "react";
+import { leerProductosAPI } from "../../helpers/queries";
 import CardProducto from "./producto/CardProducto";
-
-
 const Inicio = () => {
-  return (
-    <section className="mainSection">
-      <img
-        className="banner"
-        src="https://images.pexels.com/photos/13591748/pexels-photo-13591748.jpeg"
-        alt="fondo cafe"
-      />
-      <Container className="mt-5">
-        <h1 className="display-4">Nuestros Productos</h1>
-        <hr />
+  const [productos, setProductos] = useState([]);
+  useEffect(() => {
+    obtenerProductos()
+  }, []);
 
-        <Row>
-          <CardProducto></CardProducto>
-          <CardProducto></CardProducto>
-          <CardProducto></CardProducto>
-          <CardProducto></CardProducto>
-          <CardProducto></CardProducto>
-        </Row>
-      </Container>
-    </section>
+  const obtenerProductos = async () => {
+    try {
+      const datos = await leerProductosAPI();
+      if(datos.status ===200){
+        const prod = await datos.json()
+        setProductos(prod)
+        
+      }
+    } catch(err) {
+      console.log(err)
+    }
+  };
+
+  return (
+    
+    <div className="maquetadosPaginas">
+      <div className="container">
+        <h2>Nuestros Productos</h2>
+        <div className="row">
+          {
+            productos.map((producto,index)=>(
+              <CardProducto key={index} producto={producto} ></CardProducto>
+            ))
+          }
+        </div>
+      </div>
+    </div>
   );
 };
 
-export default Inicio;
+export default Inicio;

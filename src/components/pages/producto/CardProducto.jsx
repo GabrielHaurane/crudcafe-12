@@ -1,32 +1,36 @@
-import { Col, Card, Button } from "react-bootstrap";
-
-const CardProducto = () => {
-  return (
-    <Col md={4} lg={3} className="mb-3">
-      <Card className="h-100">
-        <div>
-          <img
-            src="https://images.pexels.com/photos/414555/pexels-photo-414555.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-            alt="cafe"
-            className="card-img-top-nueva"
-          />
-        </div>
-        <Card.Body>
-          <Card.Title className="primary-font">Capuchino</Card.Title>
-          <Card.Text>
-            Descripción: Descripción: Espuma de leche cremosa sobre un espresso
-            fuerte. <br className="mb-2" />
-            <span className="fw-bold">Precio: $350</span>
-          </Card.Text>
-        </Card.Body>
-        <Card.Footer className="text-end">
-          <Button variant="success" className="me-2">
-            Ver más
-          </Button>
-        </Card.Footer>
-      </Card>
-    </Col>
-  );
+import React from 'react';
+import { Link } from 'react-router-dom';
+import Card from "react-bootstrap/Card";
+import { CardFooter } from "react-bootstrap";
+import DetalleProducto from '../DetalleProducto';
+const CardProducto = ({producto}) => {
+    return (
+        
+        <div className="my-2 col-3">
+            <Card>
+              <Card.Img variant="top" src={producto.imagen} />
+              <Card.Body>
+                <h5 className="verdeOscuro">{producto.nombreProducto} </h5>
+                <Card.Text>
+                  {producto.descripcion_breve}
+                </Card.Text>
+                <div className="p-0 m-0">
+                  <b>${producto.precio} </b>
+                </div>
+              </Card.Body>
+              <CardFooter>
+                <div className="text-end">
+                  <Link
+                    to={`./DetalleProducto/${producto.id}`}
+                    className="btn btn-success"
+                  >
+                    Ver detalle
+                  </Link>
+                </div>
+              </CardFooter>
+            </Card>
+          </div>
+    );
 };
 
-export default CardProducto;
+export default CardProducto;
