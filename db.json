@@ -1,33 +1,6 @@
 {
   "productos": [
     {
-      "nombreProducto": "cafe",
-      "precio": "3000",
-      "imagen": "https://images.pexels.com/photos/887853/pexels-photo-887853.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
-      "categoria": "Dulce",
-      "descripcion_breve": "dasdadsssssssssssssss",
-      "descripcion_amplia": "sssssssssssssssssssssssssssssss",
-      "id": "fTTSYME"
-    },
-    {
-      "nombreProducto": "cafe",
-      "precio": "5000",
-      "imagen": "https://images.pexels.com/photos/887853/pexels-photo-887853.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
-      "categoria": "Infusiones",
-      "descripcion_breve": "dasdasdasd sis",
-      "descripcion_amplia": "dasdasdasdasdadas",
-      "id": "Rl5dx9z"
-    },
-    {
-      "nombreProducto": "cafe",
-      "precio": "2323",
-      "imagen": "https://images.pexels.com/photos/887853/pexels-photo-887853.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
-      "categoria": "Batidos",
-      "descripcion_breve": "sadsdaaaaaaaaaaaaaaaaaaaa",
-      "descripcion_amplia": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
-      "id": "btlKks9"
-    },
-    {
       "nombreProducto": "cafe 2",
       "precio": "2222",
       "imagen": "https://images.pexels.com/photos/887853/pexels-photo-887853.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
