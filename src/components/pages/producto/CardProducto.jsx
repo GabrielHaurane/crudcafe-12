@@ -21,7 +21,7 @@ const CardProducto = ({producto}) => {
               <CardFooter>
                 <div className="text-end">
                   <Link
-                    to={`./DetalleProducto/${producto.id}`}
+                    to={`./DetalleProducto/${producto._id}`}
                     className="btn btn-success"
                   >
                     Ver detalle
