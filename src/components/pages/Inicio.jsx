@@ -23,6 +23,11 @@ const Inicio = () => {
   return (
     
     <div className="maquetadosPaginas">
+      <img
+        className="banner"
+        src="https://images.pexels.com/photos/13591748/pexels-photo-13591748.jpeg"
+        alt="fondo cafe"
+      />
       <div className="container">
         <h2>Nuestros Productos</h2>
         <div className="row">
