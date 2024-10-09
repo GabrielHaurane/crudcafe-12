@@ -6,7 +6,7 @@ import DetalleProducto from '../DetalleProducto';
 const CardProducto = ({producto}) => {
     return (
         
-        <div className="my-2 col-12 col-sm-6 col-md-3 col-lg-4">
+        <div className="my-2 col-12 col-sm-6 col-md-4 col-lg-3">
             <Card>
               <Card.Img variant="top" src={producto.imagen} className='img-fluid imgProdu'/>
               <Card.Body className='cardProdu d-flex flex-column flex-grow-1 justify-content-between'>
