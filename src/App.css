@@ -68,3 +68,16 @@
 .cardProdu{
   height: 225px;
 }
+.custom-button {
+  background-color: transparent;
+  color: black;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  text-decoration: none;
+}
+.custom-button:hover {
+  color: white; /* Puedes personalizar el estilo al hacer hover */
+  background-color: black; /* Color de fondo al pasar el ratón */
+}
